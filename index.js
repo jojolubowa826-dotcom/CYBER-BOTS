@@ -26,7 +26,7 @@ const B = require('./lib/buttons')
 const { tiny } = require('./lib/fancy_font/fancy')
 const prefix = config.PREFIX || '.'
 
-const ownerNumber = [config.OWNER_NUMBER || '26775462914']
+const ownerNumber = [config.OWNER_NUMBER || 'jojolubowa826@gmail.com]
 let dynamicMode = config.MODE || 'public'
 
 // =================== CACHES ===================
