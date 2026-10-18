@@ -83,11 +83,11 @@ cmd({
         }
 
         let successText = 
-`╭───〔 🌸 *T𝚜𝚊𝚕𝚊 U𝚙𝚍𝚊𝚝𝚎* 🌸 〕───⬣
+`╭───〔 🌸 *CYBER U𝚙𝚍𝚊𝚝𝚎* 🌸 〕───⬣
 │ ✅ *Status:* Update complete!
 │ 🔄 *Action:* Restarting...
 ╰──────────────⬣
-> *✨ Tsala Yame | Pᴏᴡᴇʀᴇᴅ ʙʏ Mᴜʟᴀx Pʀɪᴍᴇ*`;
+> *✨ CYBER BOT | Pᴏᴡᴇʀᴇᴅ ʙʏ GAVLATRON*`;
 
         let styledSuccess = tiny(successText);
         const photoPath = getRandomPhoto();
