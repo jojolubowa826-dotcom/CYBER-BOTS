@@ -64,7 +64,7 @@ ${channelUrl}
 │ 🔢 *Count:* ${countParam}
 │ 📊 *Status:* ${statusText}`;
 
-        const cardContent = `╭───〔 🔥 *Tsala Channel React (Alt)* 🔥 〕───⬣\n${infoText}\n╰──────────────────────⬣`;
+        const cardContent = `╭───〔 🔥 *CYBER Channel React (Alt)* 🔥 〕───⬣\n${infoText}\n╰──────────────────────⬣`;
         const styledText = tiny(cardContent);
 
         const photoPath = getRandomPhoto();
@@ -80,7 +80,7 @@ ${channelUrl}
         await B.sendButtons(conn, from, {
             text: styledText,
             image: image,
-            footer: '✨ Tsala Yame | PᴏᴡᴇRᴇD ʙY MᴜLᴀX PʀIᴍE',
+            footer: '✨ CYBER BOT | PᴏᴡᴇRᴇD ʙY GAVLATRON,
             buttons: buttons
         }, { quoted: mek });
 
