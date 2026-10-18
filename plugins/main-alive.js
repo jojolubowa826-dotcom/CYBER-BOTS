@@ -41,7 +41,7 @@ async(conn, mek, m, { from, sender, reply }) => {
         ];
 
         await B.sendButtons(conn, from, {
-            text: config.ALIVE_MSG || "🌸 *Tsala_Go is Active and Running!*",
+            text: config.ALIVE_MSG || "🌸 *CYBER is Active and Running!*",
             image: imageSource,
             footer: 'CYBER BOT| Powered by GAVLATRON,
             buttons: buttons
