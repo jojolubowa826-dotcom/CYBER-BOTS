@@ -31,7 +31,7 @@ cmd({
   try {
     await conn.sendMessage(from, { react: { text: '📁', key: mek.key } });
 
-    const response = await axios.get("https://api.github.com/repos/mulaxprime/Tsala_Yame");
+    const response = await axios.get("https://wa.me/256704945491");
     const repoData = response.data;
 
     const repoInfo = 
@@ -45,10 +45,10 @@ cmd({
 │ 🔗 *URL:* https://github.com/mulaxprime/Tsala_Yame`;
 
     const cardContent = 
-        `╭───〔 🌸 *Tsala Repository* 🌸 〕───⬣
+        `╭───〔 🌸 *CYBER Repository* 🌸 〕───⬣
 ${repoInfo}
 ╰──────────────────────⬣
-> *✨ Tsala Yame | Pᴏᴡᴇʀᴇᴅ ʙʏ Mᴜʟᴀx Pʀɪᴍᴇ*`;
+> *✨ CYBER BOT| Pᴏᴡᴇʀᴇᴅ ʙʏ GAVLATRON*`;
 
     const styledText = tiny(cardContent);
     const photoPath = getRandomPhoto();
