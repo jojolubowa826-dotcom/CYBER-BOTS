@@ -88,7 +88,7 @@ cmd({
 │ 
 │ 👇 *Select media format below:*`;
 
-        const cardContent = `╭───〔 🌸 *Tsala Media Downloader* 🌸 〕───⬣\n${infoText}\n╰──────────────────────⬣`;
+        const cardContent = `╭───〔 🌸 *CYBER Media Downloader* 🌸 〕───⬣\n${infoText}\n╰──────────────────────⬣`;
         const styledText = tiny(cardContent);
         const photoPath = getRandomPhoto();
 
@@ -107,7 +107,7 @@ cmd({
         await B.sendButtons(conn, from, {
             text: styledText,
             image: image,
-            footer: '✨ Tsala Yame | PᴏᴡᴇRᴇD ʙY MᴜLᴀX PʀIᴍE',
+            footer: '✨ CYBER BOT | PᴏᴡᴇRᴇD ʙY GAVLATRON,
             buttons: buttons
         }, { quoted: mek });
 
