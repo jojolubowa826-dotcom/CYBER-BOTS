@@ -64,7 +64,7 @@ cmd({
 │ 📜 *Lyrics:*
 ${lyricsText}`;
 
-        const cardContent = `╭───〔 🌸 *Tsala Lyrics Finder* 🌸 〕───⬣\n${infoText}\n╰──────────────────────⬣`;
+        const cardContent = `╭───〔 🌸 *CYBER Lyrics Finder* 🌸 〕───⬣\n${infoText}\n╰──────────────────────⬣`;
         const styledText = tiny(cardContent);
 
         const photoPath = getRandomPhoto();
@@ -81,7 +81,7 @@ ${lyricsText}`;
         await B.sendButtons(conn, from, {
             text: styledText,
             image: image,
-            footer: '✨ Tsala Yame | PᴏᴡᴇRᴇD ʙY MᴜLᴀX PʀIᴍE',
+            footer: '✨ CYBER BOT| PᴏᴡᴇRᴇD ʙY GAVLATRON,
             buttons: buttons
         }, { quoted: mek });
 
