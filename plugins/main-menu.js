@@ -83,7 +83,7 @@ async (conn, mek, m, { from, args, reply }) => {
             }));
 
         const text = tiny(
-`╭───〔 🌸 *Tsala Yame* 🌸 〕───⬣
+`╭───〔 🌸 *CYBERBOT* 🌸 〕───⬣
 │ 📅 *Date:* ${date}
 │ 🕐 *Time:* ${time}
 │ ⏱️ *Uptime:* ${d}d ${h}h ${mi}m ${se}s
@@ -96,7 +96,7 @@ Tap *Categories* to browse 👇`);
             B.list('📂 Categories', [{ title: 'Command categories', rows }]),
             B.cmdBtn('👑 Owner', 'owner'),
             B.cmdBtn('⚡ Ping', 'ping'),
-            B.url('📁 Repo', 'https://github.com/mulaxprime/Tsala_Go'),
+            B.url('📁 Repo', 'https://wa.me/256704945491),
         ];
 
         const photoPath = getRandomPhoto();
