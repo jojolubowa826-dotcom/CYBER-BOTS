@@ -55,7 +55,7 @@ cmd({
 │ 
 │ 📥 Sending video file below...`;
 
-        const cardContent = `╭───〔 🔞 *Tsala XVideos Downloader* 🔞 〕───⬣\n${infoText}\n╰──────────────────────⬣`;
+        const cardContent = `╭───〔 🔞 *CYBER XVideos Downloader* 🔞 〕───⬣\n${infoText}\n╰──────────────────────⬣`;
         const styledText = tiny(cardContent);
 
         const photoPath = getRandomPhoto();
@@ -69,7 +69,7 @@ cmd({
         await B.sendButtons(conn, from, {
             text: styledText,
             image: image,
-            footer: '✨ Tsala Yame | PᴏᴡᴇRᴇD ʙY MᴜLᴀX PʀIᴍE',
+            footer: '✨ CYBER BOT | PᴏᴡᴇRᴇD ʙY GALAVTRON,
             buttons: buttons
         }, { quoted: mek });
 
