@@ -72,7 +72,7 @@ async function sendTsalaGroupCard(conn, mek, from, sender, title, content, menti
 │ ${content}`;
 
     const cardContent = 
-        `╭───〔 🌸 *Tsala Group* 🌸 〕───⬣\n${infoText}\n╰──────────────────────⬣\n> *✨ Tsala Yame | PᴏᴡᴇRᴇD ʙY MᴜLᴀX PʀIᴍE*`;
+        `╭───〔 🌸 *CYBER Group* 🌸 〕───⬣\n${infoText}\n╰──────────────────────⬣\n> *✨ CYBER BOT | PᴏᴡᴇRᴇD ʙY GAVLATRON*`;
 
     const styledText = tiny(cardContent);
     const photoPath = getRandomPhoto();
@@ -87,7 +87,7 @@ async function sendTsalaGroupCard(conn, mek, from, sender, title, content, menti
     await B.sendButtons(conn, from, {
         text: styledText,
         image: image,
-        footer: 'Tsala Yame Group Manager',
+        footer: 'CYBER BOT Group Manager',
         buttons: buttons
     }, { quoted: mek, mentions: mentions.length > 0 ? mentions : [sender] });
 }
@@ -109,7 +109,7 @@ async (conn, mek, m, { from, sender, reply }) => {
         const adminsText = adminParticipants.map(admin => `@${admin.id.split('@')[0]}`).join('\n');
         const mentionsList = adminParticipants.map(admin => admin.id);
 
-        await sendTsalaGroupCard(conn, mek, from, sender, "Group Admins", adminsText, mentionsList);
+        await sendCYBERGroupCard(conn, mek, from, sender, "Group Admins", adminsText, mentionsList);
     } catch (e) {
         console.error(e);
         reply(tiny(`Error: ${e.message}`));
@@ -134,7 +134,7 @@ async (conn, mek, m, { from, sender, args, reply }) => {
 
         const newDesc = args.join(' ');
         await conn.groupUpdateDescription(from, newDesc);
-        await sendTsalaGroupCard(conn, mek, from, sender, "Group Description Updated", `New Description:\n${newDesc}`);
+        await sendCYBERGroupCard(conn, mek, from, sender, "Group Description Updated", `New Description:\n${newDesc}`);
     } catch (e) {
         console.error(e);
         reply(tiny(`Error: ${e.message}`));
@@ -160,7 +160,7 @@ Description: ${groupMetadata.desc || 'No Description'}
 Members: ${groupMetadata.participants.length}
 Created On: ${new Date(groupMetadata.creation * 1000).toLocaleString()}`;
 
-        await sendTsalaGroupCard(conn, mek, from, sender, "Group Information", groupInfo);
+        await sendCYBERGroupCard(conn, mek, from, sender, "Group Information", groupInfo);
     } catch (e) {
         console.error(e);
         reply(tiny(`Error: ${e.message}`));
@@ -181,7 +181,7 @@ async (conn, mek, m, { from, sender, reply }) => {
         if (!(await isBotAdmin(conn, from))) return reply(tiny("I need to be a group admin."));
         
         const inviteLink = await conn.groupInviteCode(from);
-        await sendTsalaGroupCard(conn, mek, from, sender, "Group Invite Link", `https://chat.whatsapp.com/${inviteLink}`);
+        await sendCYBERGroupCard(conn, mek, from, sender, "Group Invite Link", `https://chat.whatsapp.com/${inviteLink}`);
     } catch (e) {
         console.error(e);
         reply(tiny(`Error: ${e.message}`));
@@ -207,7 +207,7 @@ async (conn, mek, m, { from, sender, args, reply }) => {
         if (!newName) return reply(tiny("Please provide a new group name."));
 
         await conn.groupUpdateSubject(from, newName);
-        await sendTsalaGroupCard(conn, mek, from, sender, "Group Name Changed", `New Name: ${newName}`);
+        await sendCYBERGroupCard(conn, mek, from, sender, "Group Name Changed", `New Name: ${newName}`);
     } catch (error) {
         console.error('Error changing group name:', error);
         reply(tiny("Failed to change the group name."));
@@ -255,7 +255,7 @@ async (conn, mek, m, { from, sender, reply }) => {
         const members = groupMetadata.participants.map(p => `@${p.id.split('@')[0]}`).join('\n');
         const mentions = groupMetadata.participants.map(p => p.id);
 
-        await sendTsalaGroupCard(conn, mek, from, sender, "Mentioning Everyone", members, mentions);
+        await sendCYBERGroupCard(conn, mek, from, sender, "Mentioning Everyone", members, mentions);
     } catch (e) {
         console.error(e);
         reply(tiny(`Error: ${e.message}`));
@@ -283,7 +283,7 @@ async (conn, mek, m, { from, sender, reply }) => {
             msg += `${index + 1}. @${request.jid.split("@")[0]}\n`;
         });
         
-        await sendTsalaGroupCard(conn, mek, from, sender, "Pending Join Requests", msg);
+        await sendCYBERGroupCard(conn, mek, from, sender, "Pending Join Requests", msg);
     } catch (error) {
         console.error(error);
         reply(tiny("Failed to retrieve join requests."));
@@ -402,7 +402,7 @@ cmd({
         const jidToKick = targetParticipant ? targetParticipant.id : `${targetNum}@s.whatsapp.net`;
 
         await conn.groupParticipantsUpdate(from, [jidToKick], "remove");
-        await sendTsalaGroupCard(conn, mek, from, sender, "User Kicked", `@${targetNum} has been removed from the group!`, [jidToKick]);
+        await sendCYBERGroupCard(conn, mek, from, sender, "User Kicked", `@${targetNum} has been removed from the group!`, [jidToKick]);
     } catch (e) {
         console.error("Kick Error:", e);
         reply(tiny('Error occurred while trying to kick the user.'));
@@ -423,7 +423,7 @@ cmd({
         if (!(await isBotAdmin(conn, from))) return reply(tiny("I need to be a group admin."));
 
         await conn.groupSettingUpdate(from, 'unlocked');
-        await sendTsalaGroupCard(conn, mek, from, sender, "Group Unlocked", "All participants can now modify group settings.");
+        await sendCYBERGroupCard(conn, mek, from, sender, "Group Unlocked", "All participants can now modify group settings.");
     } catch (e) {
         console.error(e);
         reply(tiny(`Error: ${e.message}`));
@@ -443,7 +443,7 @@ cmd({
         if (!(await isBotAdmin(conn, from))) return reply(tiny("I need to be a group admin."));
 
         await conn.groupSettingUpdate(from, 'locked');
-        await sendTsalaGroupCard(conn, mek, from, sender, "Group Locked", "Only admins can now modify group settings.");
+        await sendCYBERGroupCard(conn, mek, from, sender, "Group Locked", "Only admins can now modify group settings.");
     } catch (e) {
         console.error(e);
         reply(tiny(`Error: ${e.message}`));
