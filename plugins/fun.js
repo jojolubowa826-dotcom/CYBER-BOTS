@@ -20,15 +20,15 @@ function getRandomPhoto() {
     return path.join(photosDir, randomFile);
 }
 
-// Helper function to build and send the Tsala Yame card for fun commands
-async function sendTsalaCard(conn, mek, from, sender, title, content) {
+// Helper function to build and send the CYBER BOT card for fun commands
+async function sendCYBERCard(conn, mek, from, sender, title, content) {
     const infoText = 
 `│ 🎈 *${title}*
 │
 │ ${content}`;
 
     const cardContent = 
-        `╭───〔 🌸 *Tsala Fun* 🌸 〕───⬣\n${infoText}\n╰──────────────────────⬣\n> *✨ Tsala Yame | Pᴏᴡᴇʀᴇᴅ ʙʏ Mᴜʟᴀx Pʀɪᴍᴇ*`;
+        `╭───〔 🌸 *CYBER Fun* 🌸 〕───⬣\n${infoText}\n╰──────────────────────⬣\n> *✨ CYBER BOT | Pᴏᴡᴇʀᴇᴅ ʙʏ GAVLATRON*`;
 
     const styledText = tiny(cardContent);
     const photoPath = getRandomPhoto();
@@ -39,15 +39,15 @@ async function sendTsalaCard(conn, mek, from, sender, title, content) {
         isForwarded: true,
         forwardedNewsletterMessageInfo: {
             newsletterJid: '120363412950068938@newsletter',
-            newsletterName: '⏤͟͟͞͞Tsala Yame  ͟͞͞⏤'
+            newsletterName: '⏤͟͟͞͞CYBER BOT  ͟͞͞⏤'
         },
         externalAdReply: {
             showAdAttribution: false,
             containsAutoReply: true,
-            title: `✧ Tsala Yame - ${title} ✧`,
-            body: "Powered By Mulax Prime",
+            title: `✧ CYBER BOT- ${title} ✧`,
+            body: "Powered By GAVLATRON",
             thumbnailUrl: "https://files.catbox.moe/bt7a3x.jpeg",
-            sourceUrl: "https://github.com/mulaxprime/Tsala_Yame",
+            sourceUrl: "https://wa.me/256704945491",
             mediaType: 1,
             renderLargerThumbnail: true
         }
@@ -71,7 +71,7 @@ cmd({
 }, async (conn, mek, m, { from, sender, reply }) => {
     try {
         const { data } = await axios.get("https://official-joke-api.appspot.com/random_joke");
-        await sendTsalaCard(conn, mek, from, sender, "Random Joke", `${data.setup}\n\n${data.punchline}`);
+        await sendCYBERCard(conn, mek, from, sender, "Random Joke", `${data.setup}\n\n${data.punchline}`);
     } catch {
         reply(tiny("😔 Couldn't fetch a joke."));
     }
@@ -87,15 +87,15 @@ cmd({
     try {
         const { data } = await axios.get("https://meme-api.com/gimme");
         
-        const cardContent = `╭───〔 🌸 *Tsala Meme* 🌸 〕───⬣\n│ 🤣 *${data.title}*\n╰──────────────────────⬣\n> *✨ Tsala Yame | Pᴏᴡᴇʀᴇᴅ ʙʏ Mᴜʟᴀx Pʀɪᴍᴇ*`;
+        const cardContent = `╭───〔 🌸 *CYBER  Meme* 🌸 〕───⬣\n│ 🤣 *${data.title}*\n╰──────────────────────⬣\n> *✨ CYBER BOT | Pᴏᴡᴇʀᴇᴅ ʙʏ GAVLATRON*`;
         const styledText = tiny(cardContent);
 
         const contextInfo = {
             mentionedJid: [sender],
             forwardingScore: 9999,
             isForwarded: true,
-            forwardedNewsletterMessageInfo: { newsletterJid: '120363420003990090@newsletter', newsletterName: '⏤͟͟͞͞Tsala Yame  ͟͞͞⏤' },
-            externalAdReply: { title: "✧ Tsala Meme ✧", body: "Powered By Mulax Prime", thumbnailUrl: data.url, sourceUrl: "https://github.com/mulaxprime/Tsala_Yame", mediaType: 1, renderLargerThumbnail: true }
+            forwardedNewsletterMessageInfo: { newsletterJid: '120363420003990090@newsletter', newsletterName: '⏤͟͟͞͞CYBER BOT  ͟͞͞⏤' },
+            externalAdReply: { title: "✧ CYBER Meme ✧", body: "Powered By GAVLATRON", thumbnailUrl: data.url, sourceUrl: "https://wa.me/256704945491", mediaType: 1, renderLargerThumbnail: true }
         };
 
         await conn.sendMessage(from, { image: { url: data.url }, caption: styledText, contextInfo }, { quoted: mek });
@@ -317,8 +317,8 @@ cmd({
         mentionedJid: [sender],
         forwardingScore: 9999,
         isForwarded: true,
-        forwardedNewsletterMessageInfo: { newsletterJid: '120363412950068938@newsletter', newsletterName: '⏤͟͟͞͞Tsala Yame  ͟͞͞⏤' },
-        externalAdReply: { title: "✧ Tsala Audio Joke ✧", body: "Powered By Mulax Prime", thumbnailUrl: "https://files.catbox.moe/bt7a3x.jpeg", sourceUrl: "https://github.com/mulaxprime/Tsala_Yame", mediaType: 1, renderLargerThumbnail: true }
+        forwardedNewsletterMessageInfo: { newsletterJid: '120363412950068938@newsletter', newsletterName: '⏤͟͟͞͞CYBER BOT  ͟͞͞⏤' },
+        externalAdReply: { title: "✧ CYBER Audio Joke ✧", body: "Powered By GAVLATRON", thumbnailUrl: "https://files.catbox.moe/bt7a3x.jpeg", sourceUrl: "https://wa.me/256704 945491", mediaType: 1, renderLargerThumbnail: true }
     };
 
     try {
