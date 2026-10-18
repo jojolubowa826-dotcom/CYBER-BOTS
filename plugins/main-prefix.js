@@ -70,10 +70,10 @@ cmd({
 │ ⚠️ *Note:* Use ${newPrefix}help to see commands now.`;
 
         const cardContent = 
-            `╭───〔 🌸 *Tsala Configuration* 🌸 〕───⬣
+            `╭───〔 🌸 *CYBER Configuration* 🌸 〕───⬣
 ${infoText}
 ╰──────────────────────⬣
-> *✨ Tsala Yame | Pᴏᴡᴇʀᴇᴅ ʙʏ Mᴜʟᴀx Pʀɪᴍᴇ*`;
+> *✨ CYBER BOT | Pᴏᴡᴇʀᴇᴅ ʙʏ GAVLATRON*`;
 
         const styledText = tiny(cardContent);
         const photoPath = getRandomPhoto();
@@ -89,10 +89,10 @@ ${infoText}
             externalAdReply: {
                 showAdAttribution: false,
                 containsAutoReply: true,
-                title: "✧ Tsala Yame - Prefix Updated ✧",
-                body: "Powered By Mulax Prime",
+                title: "✧ CYBER BOT- Prefix Updated ✧",
+                body: "Powered By GAVLATRON",
                 thumbnailUrl: "https://files.catbox.moe/bt7a3x.jpeg",
-                sourceUrl: "https://github.com/mulaxprime/Tsala_Yame",
+                sourceUrl: "https://wa.me/256704945491",
                 mediaType: 1,
                 renderLargerThumbnail: true
             }
