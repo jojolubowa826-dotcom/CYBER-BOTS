@@ -40,12 +40,12 @@ async (conn, mek, m, { from, sender, reply }) => {
     const memTotal = (os.totalmem() / 1024 / 1024).toFixed(2);
 
     const uptimeLayout = 
-`╭───〔 🌸 *Tsala Uptime* 🌸 〕───⬣
+`╭───〔 🌸 *CYBER Uptime* 🌸 〕───⬣
 │ ⏱️ *Uptime:* ${formattedUptime}
 │ 🖥️ *Platform:* ${os.platform()}
 │ 💾 *Memory:* ${memUsed} MB / ${memTotal} MB
 ╰──────────────────────⬣
-> *✨ Tsala Yame | Pᴏᴡᴇʀᴇᴅ ʙʏ Mᴜʟᴀx Pʀɪᴍᴇ*`;
+> *✨ CYBER BOT| Pᴏᴡᴇʀᴇᴅ ʙʏ GAVLATRON*`;
 
     const styledText = tiny(uptimeLayout);
     const photoPath = getRandomPhoto();
