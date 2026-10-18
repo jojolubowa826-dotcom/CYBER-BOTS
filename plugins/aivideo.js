@@ -28,7 +28,7 @@ cmd({
         const promptText = res.data.result.prompt || q;
 
         const infoText = 
-`╭───〔 🎬 *Tsala AI Video Generator* 🎬 〕───⬣
+`╭───〔 🎬 *CYBER BOT AI Video Generator* 🎬 〕───⬣
 │ 
 │ 📝 *Prompt:* ${promptText}
 │ ⚙️ *Aspect Ratio:* Auto
@@ -52,7 +52,7 @@ cmd({
 
         await B.sendButtons(conn, from, {
             text: tiny("👇 *Quick Actions*"),
-            footer: '✨ Tsala Yame | PᴏᴡᴇRᴇD ʙY MᴜLᴀX PʀIᴍE',
+            footer: '✨ CYBER BOT | PᴏᴡᴇRᴇD ʙY GAVLATRON,
             buttons: buttons
         }, { quoted: mek });
 
