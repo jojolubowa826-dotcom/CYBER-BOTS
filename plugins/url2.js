@@ -88,7 +88,7 @@ cmd({
 `│ 🌐 *Uploaded URL:*
 ${resultUrl}`;
 
-        const cardContent = `╭───〔 🌸 *Tsala File Uploader* 🌸 〕───⬣\n${infoText}\n╰──────────────────────⬣`;
+        const cardContent = `╭───〔 🌸 *CYBER File Uploader* 🌸 〕───⬣\n${infoText}\n╰──────────────────────⬣`;
         const styledText = tiny(cardContent);
 
         const photoPath = getRandomPhoto();
@@ -103,7 +103,7 @@ ${resultUrl}`;
         await B.sendButtons(conn, from, {
             text: styledText,
             image: image,
-            footer: '✨ Tsala Yame | PᴏᴡᴇRᴇD ʙY MᴜLᴀX PʀIᴍE',
+            footer: '✨ CYBER BOT | PᴏᴡᴇRᴇD ʙY GAVLATRON,
             buttons: buttons
         }, { quoted: mek });
 
