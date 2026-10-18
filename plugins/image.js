@@ -31,7 +31,7 @@ cmd({
 `│ 🎨 *Prompt:* ${promptText}
 │ 📐 *Ratio:* ${res.data.ratio || "1:1"}`;
 
-        const cardContent = `╭───〔 🌸 *Tsala Image Generator* 🌸 〕───⬣\n${infoText}\n╰──────────────────────⬣`;
+        const cardContent = `╭───〔 🌸 *CYBER Image Generator* 🌸 〕───⬣\n${infoText}\n╰──────────────────────⬣`;
         const styledText = tiny(cardContent);
 
         const buttons = [
@@ -42,7 +42,7 @@ cmd({
         await B.sendButtons(conn, from, {
             text: styledText,
             image: { url: imageUrl },
-            footer: '✨ Tsala Yame | PᴏᴡᴇRᴇD ʙY MᴜLᴀX PʀIᴍE',
+            footer: '✨ CYBER BOT| PᴏᴡᴇRᴇD ʙY GAVLATRON,
             buttons: buttons
         }, { quoted: mek });
 
