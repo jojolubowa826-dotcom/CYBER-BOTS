@@ -24,10 +24,10 @@ function getRandomPhoto() {
 // Helper function to send stunning card messages with optional random photo
 async function sendCardMessage(conn, from, mek, titleText, contentText, options = {}) {
     const cardContent = 
-        `╭───〔 🌸 *Tsala ${titleText}* 🌸 〕───⬣
+        `╭───〔 🌸 *CYBER ${titleText}* 🌸 〕───⬣
 ${contentText}
 ╰──────────────────────⬣
-> *✨ Tsala Yame | Pᴏᴡᴇʀᴇᴅ ʙʏ Mᴜʟᴀx Pʀɪᴍᴇ*`;
+> *✨ CYBER BOT| Pᴏᴡᴇʀᴇᴅ ʙʏ GAVLATRON*`;
 
     const styledText = tiny(cardContent);
     const photoPath = getRandomPhoto();
@@ -61,7 +61,7 @@ cmd({
         await conn.sendMessage(from, { react: { text: '🎭', key: mek.key } });
         const response = await axios.get(`https://emix-api.vercel.app/combine?emoji1=${encodeURIComponent(emoji1)}&emoji2=${encodeURIComponent(emoji2)}`);
         
-        const captionText = tiny(`╭───〔 🌸 *Tsala Emoji Mix* 🌸 〕───⬣\n│ 🎭 *Mixed:* ${emoji1} + ${emoji2}\n╰──────────────────────⬣\n> *✨ Tsala Yame | Pᴏᴡᴇʀᴇᴅ ʙʏ Mᴜʟᴀx Pʀɪᴍᴇ*`);
+        const captionText = tiny(`╭───〔 🌸 *CYBER Emoji Mix* 🌸 〕───⬣\n│ 🎭 *Mixed:* ${emoji1} + ${emoji2}\n╰──────────────────────⬣\n> *✨ CYBER BOT | Pᴏᴡᴇʀᴇᴅ ʙʏ GAVLATRON*`);
 
         await conn.sendMessage(from, { 
             image: { url: response.data.url }, 
@@ -85,13 +85,13 @@ cmd({
     const vcard = `
 BEGIN:VCARD
 VERSION:3.0
-FN:Mulax Prime
-ORG:Developer of Tsala Yame;
+FN:GALAVTRON FROM CYBERTECHFARMSTORESLTD 
+ORG:Developer of CYBER BOT;
 TEL;type=CELL;type=VOICE;waid=${config.OWNER_NUMBER}:+${config.OWNER_NUMBER}
 X-ABLabel:📞 Call Owner
-EMAIL: amantlempaekae@gmail.com
+EMAIL: JOJOLUBOWA826@GMAIL.COM 
 X-ABLabel:📧 Email
-URL: https://mulax-prime.vercel.app
+URL: https://wa.me/256704945491
 X-ABLabel:🌐 Website
 NOTE:Contact for bot related queries
 END:VCARD
@@ -99,17 +99,17 @@ END:VCARD
     
     await conn.sendMessage(from, {
         contacts: {
-            displayName: "Mulax Prime",
+            displayName: "CYBER BOT",
             contacts: [{ vcard }]
         }
     }, { quoted: mek });
     
     const ownerInfo = 
-        `│ 🤖 *Bot Name:* Tsala Yame
-│ 👨‍💻 *Developer:* MULAX PRIME
+        `│ 🤖 *Bot Name:* CYBER BOT
+│ 👨‍💻 *Developer:* GAVLATRON 
 │ 📱 *Contact:* +${config.OWNER_NUMBER}
-│ 📧 *Email:* amantlempaekae@gmail.com
-│ 🌐 *Website:* https://mulax-prime.vercel.app`;
+│ 📧 *Email:* JOJOLUBOWA826@GMAIL.COM 
+│ 🌐 *Website:* https://wa.me/256704945491`;
 
     await sendCardMessage(conn, from, mek, "Owner Info", ownerInfo);
 });
@@ -125,11 +125,11 @@ cmd({
     await conn.sendMessage(from, { react: { text: '🌟', key: mek.key } });
     
     const creditsDetails = 
-        `│ 👑 *Mulax Prime*
-│ 👨‍💻 *Sole Creator & Developer of Tsala Yame*
-│ 🌐 *Website:* https://mulax-prime.vercel.app
+        `│ 👑 *GAVLATRON*
+│ 👨‍💻 *Sole Creator & Developer of CYBER BOT*
+│ 🌐 *Website:* https://wa.me/256704945491
 │ 
-│ 🚀 *Powered by unwavering dedication and passion for code.*`;
+│ 🚀 *Powered by CYBER TECH FARM STORES LTD.*`;
 
     await sendCardMessage(conn, from, mek, "Credits", creditsDetails);
 });
@@ -229,7 +229,7 @@ cmd({
         await conn.sendMessage(from, { react: { text: '📲', key: mek.key } });
         const qrUrl = `https://api.qrserver.com/v1/create-qr-code/?size=250x250&data=${encodeURIComponent(q)}`;
         
-        const captionText = tiny(`╭───〔 🌸 *Tsala QR Code* 🌸 〕───⬣\n│ 📲 *Data:* ${q}\n╰──────────────────────⬣\n> *✨ Tsala Yame | Pᴏᴡᴇʀᴇᴅ ʙʏ Mᴜʟᴀx Pʀɪᴍᴇ*`);
+        const captionText = tiny(`╭───〔 🌸 *CYBER QR Code* 🌸 〕───⬣\n│ 📲 *Data:* ${q}\n╰──────────────────────⬣\n> *✨ CYBER BOT | Pᴏᴡᴇʀᴇᴅ ʙʏ GAVLATRON*`);
         
         await conn.sendMessage(from, { 
             image: { url: qrUrl }, 
