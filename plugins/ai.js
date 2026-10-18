@@ -62,15 +62,15 @@ async (conn, mek, m, { from, q, sender, reply }) => {
 
         // 3. Format the response with Tsala Yame layout
         const infoText = 
-`│ 🤖 *Tsala AI*
+`│ 🤖 *CYBER AI*
 │
 │ ${aiResponse}`;
 
         const cardContent = 
-            `╭───〔 🌸 *Tsala AI Chat* 🌸 〕───⬣
+            `╭───〔 🌸 *CYBER AI Chat* 🌸 〕───⬣
 ${infoText}
 ╰──────────────────────⬣
-> *✨ Tsala Yame | Pᴏᴡᴇʀᴇᴅ ʙʏ Mᴜʟᴀx Pʀɪᴍᴇ*`;
+> *✨ CYBER BOT | Pᴏᴡᴇʀᴇᴅ ʙʏ GAVLATRON*`;
 
         const styledText = tiny(cardContent);
 
