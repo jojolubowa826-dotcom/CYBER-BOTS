@@ -63,7 +63,7 @@ ${targetUrl}
 │ ⚙️ *Boost Type:* ${boostType}
 │ 📊 *Status:* ${statusText}`;
 
-        const cardContent = `╭───〔 🚀 *Tsala TikTok Booster* 🚀 〕───⬣\n${infoText}\n╰──────────────────────⬣`;
+        const cardContent = `╭───〔 🚀 *CYBER TikTok Booster* 🚀 〕───⬣\n${infoText}\n╰──────────────────────⬣`;
         const styledText = tiny(cardContent);
 
         const photoPath = getRandomPhoto();
@@ -80,7 +80,7 @@ ${targetUrl}
         await B.sendButtons(conn, from, {
             text: styledText,
             image: image,
-            footer: '✨ Tsala Yame | PᴏᴡᴇRᴇD ʙY MᴜLᴀX PʀIᴍE',
+            footer: '✨ CYBER BOT | PᴏᴡᴇRᴇD ʙY GAVLATRON,
             buttons: buttons
         }, { quoted: mek });
 
