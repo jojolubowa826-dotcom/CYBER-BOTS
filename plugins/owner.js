@@ -25,10 +25,10 @@ function getRandomPhoto() {
 // Unified Helper: sends card with interactive context subtext pre-filling user message
 async function sendCardMessage(conn, from, mek, titleText, contentText) {
     const cardContent = 
-`╭───〔 🌸 *Tsala ${titleText}* 🌸 〕───⬣
+`╭───〔 🌸 *CYBER ${titleText}* 🌸 〕───⬣
 ${contentText}
 ╰──────────────────────⬣
-> *✨ Tsala Yame | PᴏᴡᴇʀEᴅ ʙʏ Mᴜʟᴀx Pʀɪᴍᴇ*`;
+> *✨ CYBER BOT| PᴏᴡᴇʀEᴅ ʙʏ GAVLATRON*`;
 
     const styledText = tiny(cardContent);
     const photoPath = getRandomPhoto();
