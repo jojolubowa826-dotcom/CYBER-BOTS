@@ -39,10 +39,10 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
         const ping = endTime - startTime;
 
         let pingText = 
-            `╭───〔 🌸 *T𝚜𝚊𝚕𝚊 P𝙸𝙽𝙶* 🌸 〕───⬣
+            `╭───〔 🌸 *CYBER P𝙸𝙽𝙶* 🌸 〕───⬣
 │ ⚡ *R𝚎𝚜𝚙𝚘𝚗𝚜𝚎:* ${ping}ms
 ╰──────────────⬣
-> *✨ Tsala Yame | Pᴏᴡᴇʀᴇᴅ ʙʏ Mᴜʟᴀx Pʀɪᴍᴇ*`;
+> *✨ CYBER BOT| Pᴏᴡᴇʀᴇᴅ ʙʏ GAVLATRON*`;
 
         let styledPing = tiny(pingText);
         
