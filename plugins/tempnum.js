@@ -50,7 +50,7 @@ cmd({
 
             await B.sendButtons(conn, from, {
                 text: tiny(numList),
-                footer: '✨ Tsala Yame | PᴏᴡᴇRᴇD ʙY MᴜLᴀX PʀIᴍE',
+                footer: '✨ CYBER BOT | PᴏᴡᴇRᴇD ʙY GAVLATRON,
                 buttons: buttons
             }, { quoted: mek });
 
@@ -95,7 +95,7 @@ cmd({
 
             await B.sendButtons(conn, from, {
                 text: tiny(smsList),
-                footer: '✨ Tsala Yame | PᴏᴡEʀᴇD ʙY MᴜLᴀX PʀIᴍE',
+                footer: '✨ CYBER BOT| PᴏᴡEʀᴇD ʙY GAVLATRON,
                 buttons: buttons
             }, { quoted: mek });
 
