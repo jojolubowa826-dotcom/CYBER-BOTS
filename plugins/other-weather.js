@@ -43,7 +43,7 @@ async (conn, mek, m, { from, q, reply, sender }) => {
         const data = response.data;
 
         let weatherLayout = 
-`╭───〔 🌸 *Tsala Weather* 🌸 〕───⬣
+`╭───〔 🌸 *CYBER Weather* 🌸 〕───⬣
 │ 🌍 *City:* ${data.name}, ${data.sys.country}
 │ 🌡️ *Temp:* ${data.main.temp}°C
 │ 🌡️ *Feels Like:* ${data.main.feels_like}°C
@@ -53,7 +53,7 @@ async (conn, mek, m, { from, q, reply, sender }) => {
 │ 💨 *Wind Speed:* ${data.wind.speed} m/s
 │ 🔽 *Pressure:* ${data.main.pressure} hPa
 ╰──────────────────────⬣
-> *✨ Tsala Yame | PᴏᴡᴇRᴇᴅ ʙʏ Mᴜʟᴀx Pʀɪᴍᴇ*`;
+> *✨ CYBER BOT | PᴏᴡᴇRᴇᴅ ʙʏ GAVLATRON*`;
 
         let styledWeather = tiny(weatherLayout);
         const photoPath = getRandomPhoto();
@@ -71,10 +71,10 @@ async (conn, mek, m, { from, q, reply, sender }) => {
             isForwarded: true,
             forwardedNewsletterMessageInfo: {
                 newsletterJid: '120363420003990090@newsletter',
-                newsletterName: '⏤͟͟͞͞Tsala Yame ͟͞͞⏤'
+                newsletterName: '⏤͟͟͞͞CYBER BOT ͟͞͞⏤'
             },
             externalAdReply: {
-                title: 'Tsala Yame Weather Service',
+                title: 'CYBER BOT Weather Service',
                 body: 'Good day sir my name is ',
                 mediaType: 1,
                 renderLargerThumbnail: false
@@ -84,7 +84,7 @@ async (conn, mek, m, { from, q, reply, sender }) => {
         await B.sendButtons(conn, from, {
             text: styledWeather,
             image: imageSource,
-            footer: 'Tsala Yame | Powered by Mulax Prime',
+            footer: 'CYBER BOT| Powered by GAVLATRON,
             buttons: buttons,
             contextInfo: contextInfo
         }, { quoted: mek, mentions: [sender] });
