@@ -132,7 +132,7 @@ app.get("/", (req, res) => {
     <html lang="en">
     <head>
       <meta charset="UTF-8">
-      <title>Tsala Yame - Control Center</title>
+      <title>CYBER BOT - Control Center</title>
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
       <style>
@@ -312,7 +312,7 @@ async function connectToWA() {
           const photoPath = getRandomPhoto()
           const image = photoPath && fs.existsSync(photoPath) ? { url: photoPath } : undefined
 
-          const startupText = tiny(`🤖 *Tsala Yame is now Connected & Online!* 🚀\n\n_System fully operational._`)
+          const startupText = tiny(`🤖 *CYBER BOT is now Connected & Online!* 🚀\n\n_System fully operational._`)
           const buttons = [
             B.cmdBtn('📁 Menu', '.menu'),
             B.cmdBtn('⚡ Ping', '.ping')
