@@ -42,10 +42,10 @@ cmdnames.forEach(cmdname => {
 │ 🔗 *Source:* KazukoGans DB`;
 
           const cardContent = 
-            `╭───〔 🌸 *Tsala Anime* 🌸 〕───⬣
+            `╭───〔 🌸 *CYBER Anime* 🌸 〕───⬣
 ${infoText}
 ╰──────────────────────⬣
-> *✨ Tsala Yame | Pᴏᴡᴇʀᴇᴅ ʙʏ Mᴜʟᴀx Pʀɪᴍᴇ*`;
+> *✨ CYBER BOT | Pᴏᴡᴇʀᴇᴅ ʙʏ GAVLATRON*`;
 
           const styledText = tiny(cardContent);
 
