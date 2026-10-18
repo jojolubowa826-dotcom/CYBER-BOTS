@@ -34,13 +34,13 @@ cmd({
         const vcard = `
 BEGIN:VCARD
 VERSION:3.0
-FN:MULAX PRIME 
-ORG:Developer of Tsala Yame;
+FN:GAVLATRON FROM CYBERTECHFARMSTORESLTD 
+ORG:Developer of CYBERBOT;
 TEL;type=CELL;type=VOICE;waid=${config.OWNER_NUMBER}:+${config.OWNER_NUMBER}
 X-ABLabel:📞 Call Owner
-EMAIL: amantlempaekae@gmail.com
+EMAIL: JOJOLUBOWA826@GMAIL.COM 
 X-ABLabel:📧 Email
-URL: https://mulaxprime.vercel.app
+URL: https://wa.me/256704945491
 X-ABLabel:🌐 Website
 NOTE:Contact for bot related queries
 END:VCARD
@@ -56,14 +56,14 @@ END:VCARD
         
         // Build a sleek, non-boring styled info card
         let ownerInfo = 
-            `╭───〔 🌸 *T𝚜𝚊𝚕𝚊 O𝚠𝚗𝚎𝚛* 🌸 〕───⬣
-│ 🤖 *Bᴏᴛ:* Tsala Yame
-│ 👨‍💻 *Dᴇᴠ:* MULAX PRIME
+            `╭───〔 🌸 *CYBER O𝚠𝚗𝚎𝚛* 🌸 〕───⬣
+│ 🤖 *Bᴏᴛ:* CYBER BOT 
+│ 👨‍💻 *Dᴇᴠ:* GAVLATRON 
 │ 📱 *Pʜᴏɴᴇ:* +${config.OWNER_NUMBER}
-│ 📧 *Eᴍᴀɪʟ:* amantlempaekae@gmail.com
-│ 🌐 *Wᴇʙ:* https://mulaxprime.vercel.app
+│ 📧 *Eᴍᴀɪʟ:* JOJOLUBOWA826@GMAIL.COM 
+│ 🌐 *Wᴇʙ:* https://wa.me/256704945491
 ╰──────────────⬣
-> *✨ Tsala Yame | Pᴏᴡᴇʀᴇᴅ ʙʏ Mᴜʟᴀx Pʀɪᴍᴇ*`;
+> *✨ CYBER BOT | Pᴏᴡᴇʀᴇᴅ ʙʏ GAVLATRON*`;
 
         let styledInfo = tiny(ownerInfo);
         
